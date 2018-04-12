@@ -1,0 +1,105 @@
+*{
+	
+	
+	
+}
+
+body{
+	
+	background-image: url("../imgs/blurred-background.jpg");
+	
+	/* Parallax effect */
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	
+}
+
+.break{
+	
+	clear: left;
+	
+}
+
+.dish-container-div{
+	
+	position: relative;
+	margin: auto;
+	width: 1100px;
+	background-color: white;
+	
+}
+
+.dish-container{
+	
+	margin: auto;
+	
+	padding: 9px;
+	height: 300px;
+	width: 370px;
+	
+}
+
+.dish-name{	
+
+	width:50%;
+	font-size:22px;
+	margin:0px;
+	
+}
+
+.chili{
+	margin-bottom: 1%;
+	margin-left: -3px;
+}
+
+.dish-desc{
+	
+	margin-top: 2%;
+	width:70%;
+	word-wrap:break-word;
+	font-size:15px;
+	float:left;
+	
+}
+
+.dish-price{
+	margin-left: 5px;
+	margin-top: -35px;
+	font-size:2em;
+	float:right;
+	width:30%;
+}
+
+.dish-image{
+	
+	width: 90%;
+	height: 70%;
+	
+}
+
+#menu-category{
+	
+	
+	background-color: #FFF;
+	margin: auto;
+	width: 1100px;
+	border-bottom: 2px solid;
+	height: 300px;
+	
+}
+
+#menu-category p{
+	
+	text-align: center;
+	
+}
+
+#menu-category h1{
+	
+	font-size: 3em;
+	text-align: center;
+	
+	
+}
