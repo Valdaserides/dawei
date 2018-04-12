@@ -14,7 +14,7 @@ include("../templates/navigation.php");
 	
 	<div id="floatingDiv"> <h1> <b> Välkommen till <br> Dawei thairestaurang! </b> </h1> </div>
 	
-	<section>
+	<section>'
 	
 		<div class="section-item"> 
 		
