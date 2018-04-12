@@ -6,6 +6,8 @@ include("../templates/navigation.php"); // includerar navigationbar
 require("../dbConnect.php");
 ?>
 <div id="menu-category"> <h1> Här är våran meny! </h1> <p> Välj kategori: </p> </div>
+<div class="dish-container-div">
+
 <?php
 mysqli_query($dbc,"SET NAMES UTF8");
 
@@ -16,7 +18,6 @@ $n = 0;
 while($row = mysqli_fetch_array($result)){
 	$n++;
 	?>
-<div class="dish-container-div">
 
 	<!-- PHP = bryt float varannan rätt -->
 	<div class="dish-container <?php if($n%2==1){echo "break";};?>">
@@ -42,12 +43,13 @@ while($row = mysqli_fetch_array($result)){
 	</div>
 	
 	</div>
-
-</div>
+	
 	
 <?php	
 }	 // avsluta while-loop
-
+?>
+</div>
+<?php
 include("../templates/footer.php"); // includerar footern
 
 ?>

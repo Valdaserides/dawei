@@ -17,19 +17,6 @@
 	
 }
 
-body{
-	
-	background-image: url("../imgs/background2.jpg");
-	width: 100%;
-	min-height: 800px;
-	
-	/* Parallax effect */
-	background-attachment: fixed;
-	background-position: center;
-	background-repeat: no-repeat;
-	background-size: cover;
-	
-}
 
 section{
 	

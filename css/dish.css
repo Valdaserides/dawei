@@ -18,25 +18,29 @@ body{
 
 .break{
 	
-	clear: left;
+	
 	
 }
 
 .dish-container-div{
 	
-	position: relative;
 	margin: auto;
 	width: 1100px;
 	background-color: white;
+	display: flex;
+	flex-direction: row;
+	flex-wrap:wrap;
+	justify-content:space-around;
 	
 }
 
 .dish-container{
 	
-	margin: auto;
-	padding: 9px;
+	border-bottom: 1px solid;
+	margin: 5px 5px 5px 5px;
+	padding: 10px;
 	height: 300px;
-	width: 370px;
+	width: 330px;
 	
 }
 
@@ -44,7 +48,6 @@ body{
 
 	width:50%;
 	font-size:22px;
-	margin:0px;
 	
 }
 
@@ -55,17 +58,15 @@ body{
 
 .dish-desc{
 	
-	margin-top: 2%;
-	width:70%;
+	width:68%;
 	word-wrap:break-word;
-	font-size:15px;
+	font-size:13px;
 	float:left;
 	
 }
 
 .dish-price{
 	margin-left: 5px;
-	margin-top: -35px;
 	font-size:2em;
 	float:right;
 	width:30%;
