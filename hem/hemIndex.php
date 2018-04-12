@@ -13,7 +13,7 @@ include("../templates/navigation.php");
 	<div id="parallax">	</div>
 	
 	<div id="floatingDiv"> <h1> <b> Välkommen till <br> Dawei thairestaurang! </b> </h1> </div>
-	
+
 	<section>
 	
 		<div class="section-item"> 
