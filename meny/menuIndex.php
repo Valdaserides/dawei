@@ -16,38 +16,34 @@ $n = 0;
 while($row = mysqli_fetch_array($result)){
 	$n++;
 	?>
-	<div class="dish-container-div"> 
-	<!-- PHP = bryt float varannan rätt -->
-				
-		<div class="dish-container" <?php if($n%2==1){echo "break";};?>>
+<div class="dish-container-div">
 
-			<img class="dish-image" src="../imgs/<?php echo $row['bild']; ?>">
-			
-			<div class="dish-name"> <!-- skriv ut n och rättens namn -->
-				<p><?php echo $n . ". " .$row['namn'];?> </p>
-			</div>
-				
-			<?php // Skriv ut antal chilis som rätten är "hot"
-			$hotness = $row['starkhet'];	
-			for($i = 0 ; $i < $hotness ; $i++){?>
-				<img class="chili" width="25px" src="../imgs/chili.png" />
-			<?php } ?>
-				
-			<div class="dish-desc"> 
-				<p><?php echo $row['beskrivning'];?></p>
-			</div>
-				
-			<div class="dish-price"> 
-				
-				<p> <?php echo $row['pris'];?>:-</p>
-					
-			</div>
-			
-		</div>
-			
-	</div>
-			
+	<!-- PHP = bryt float varannan rätt -->
+	<div class="dish-container <?php if($n%2==1){echo "break";};?>">
 	
+	<img src="../imgs/<?php echo $row['bild']; ?>" class="dish-image">
+
+	<div class="dish-name"> <!-- skriv ut n och rättens namn -->
+		<p><?php echo $n . ". " .$row['namn'];?> </p>
+	</div>
+	
+	<?php // Skriv ut antal chilis som rätten är "hot"
+	$hotness = $row['starkhet'];	
+	for($i = 0 ; $i < $hotness ; $i++){?>
+		<img class="chili" width="25px" src="../imgs/chili.png" />
+	<?php } ?>
+	
+	<div class="dish-desc"> 
+		<p><?php echo $row['beskrivning'];?></p>
+	</div>
+	
+	<div class="dish-price"> 
+		<p> <?php echo $row['pris'];?>:-</p>
+	</div>
+	
+	</div>
+
+</div>
 	
 <?php	
 }	 // avsluta while-loop
