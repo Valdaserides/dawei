@@ -114,3 +114,43 @@ body{
 	
 	
 }
+
+@media only screen and (max-width: 1090px) {
+	
+	.dish-container-div{
+		display: flex;
+		flex-direction: row;
+		justify-content: space-around;
+	}
+	
+	
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
