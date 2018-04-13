@@ -96,6 +96,7 @@ label{
 		display: block;
 		cursor: pointer;
 		width: 26px;
+		margin-left: 20px;
 	}
 	
 	.respo-li{
