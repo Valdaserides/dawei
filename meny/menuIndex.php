@@ -5,13 +5,59 @@
 include("../templates/navigation.php"); // includerar navigationbar
 require("../dbConnect.php");
 ?>
-<div id="menu-category"> <h1> Här är våran meny! </h1> <p> Välj kategori: </p> </div>
+<div id="menu-category"> 
+
+	<h1> Här är våran meny! </h1> 
+	<p> Välj kategori: </p> 
+	
+	<div class="categories">
+	
+		<form method="GET">
+			
+			Kyckling <input type="checkbox" name="category" value="1" class="category-checkbox"> <br>
+			Biff <input type="checkbox" name="category" value="2" class="category-checkbox"> <br>
+			Fläsk <input type="checkbox" name="category" value="3" class="category-checkbox"> <br>
+			Soppa <input type="checkbox" name="category" value="4" class="category-checkbox"> <br>
+			Fisk <input type="checkbox" name="category" value="5" class="category-checkbox"> <br>
+			Vegetariskt <input type="checkbox" name="category" value="6" class="category-checkbox"> <br>
+			Efterrätt <input type="checkbox" name="category" value="7" class="category-checkbox"> <br>
+			Dryck <input type="checkbox" name="category" value="8" class="category-checkbox"> <br>
+		
+			Starkhet: <br>
+			1<input type="checkbox" name="hot" value="1">
+			2<input type="checkbox" name="hot" value="2">
+			3<input type="checkbox" name="hot" value="3">
+			<input type="submit" value="Visa">
+		
+		</form>
+		
+	</div>
+
+</div>
+
 <div class="dish-container-div">
 
 <?php
 mysqli_query($dbc,"SET NAMES UTF8");
 
-$query = "SELECT * FROM matratter;";
+if(isset($_GET['hot']) && isset($_GET['category'])){
+	// rätt siffror
+	$category = "WHERE starkhet= ".$_GET['hot']." AND kategori = ".$_GET['category'];
+}
+else if(isset($_GET['category'])){
+	// rätt siffror
+	$category = "WHERE kategori = ".$_GET['category'];
+}
+else if(isset($_GET['hot'])){
+	// rätt siffror
+	$category = "WHERE starkhet= ".$_GET['hot'];
+}
+else{
+	$category = "";
+}
+
+$query = "SELECT * FROM matratter ".$category;
+
 $result = mysqli_query($dbc,$query);
 
 $n = 0;
