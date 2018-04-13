@@ -27,7 +27,8 @@ require("../dbConnect.php");
 			1<input type="checkbox" name="hot" value="1">
 			2<input type="checkbox" name="hot" value="2">
 			3<input type="checkbox" name="hot" value="3">
-			<input type="submit" value="Visa">
+			<input type="submit" value="Visa"> 
+			<button> Reset </button> 
 		
 		</form>
 		
@@ -59,6 +60,10 @@ else{
 $query = "SELECT * FROM matratter ".$category;
 
 $result = mysqli_query($dbc,$query);
+
+if(!mysqli_fetch_array($result)){
+	echo "<h2>No result</h2>";
+}
 
 $n = 0;
 while($row = mysqli_fetch_array($result)){
