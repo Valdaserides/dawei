@@ -62,7 +62,7 @@ $query = "SELECT * FROM matratter ".$category;
 $result = mysqli_query($dbc,$query);
 
 if(!mysqli_fetch_array($result)){
-	echo "<h2>No result</h2>";
+	echo "<h2>Inga resultat.</h2>";
 }
 
 $n = 0;

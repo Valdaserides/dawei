@@ -18,7 +18,7 @@ body{
 
 .categories{
 	padding: 10px;
-	width: 9%;
+	width: 100px;
 	margin: auto;
 }
 
@@ -116,18 +116,34 @@ body{
 	
 }
 
-@media only screen and (max-width: 1090px) {
+@media screen and (max-width: 1090px) {
 	
 	.dish-container-div{
-		display: flex;
-		flex-direction: row;
-		justify-content: space-around;
+		width: 100%;
+		justify-content: evenly;
 	}
 	
 	#menu-category{
-		
+		width: 100%;
 	}
 	
+}
+
+@media screen and (max-width: 490px) {
+	
+	.dish-container-div{
+		flex-direction: column;
+		width: 100%;
+	}
+	
+	.dish-container{
+		margin: auto;
+		margin-bottom: 2px;
+	}
+	
+	#menu-category h1{
+		font-size: 2em;
+	}
 	
 }
 
