@@ -27,20 +27,31 @@ main{
 
 .text{
 	
-	border: 1px solid;
+	
 	
 }
 
-.text h1, h3{
+.text h1{
+	font-family: 'Oswald', sans-serif;
+	font-size: 3em;
+	font-weight: 700;
+	padding-bottom: 20px;
+	text-align: center;
 	
-	font-weight: 500;
-	padding: 15px 15px 15px 15px;
+}
+
+.text h3{
+	
+	margin-bottom: 50px;
+	font-weight: 600;
+	padding-bottom: 20px;
 	text-align: center;
 	
 }
 
 #omdomen{
 	
+	width: 100%;
 	display: flex;
 	flex-direction: row-reverse;
 	
@@ -48,17 +59,30 @@ main{
 
 .alla-omdomen{
 	
-	
+	width: 40%;
 	
 }
 
 .omdomen-form{
 	width: 50%;
-	border: 1px solid;
-	
+	border-left: 1px solid;
+	padding-left: 50px;
+
 }
 
-
+@media only screen and (max-width: 1090px) {
+	
+	main{
+		width: 100%;
+	}
+	
+	.text h1{
+		font-size: 2em;
+		width: 75%;
+		margin: auto;
+	}
+	
+}
 
 
 
