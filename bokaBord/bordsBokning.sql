@@ -1,0 +1,6 @@
+CREATE TABLE bord(
+
+bord_id int(8) PRIMARY KEY AUTO_INCREMENT,
+
+
+);
