@@ -17,11 +17,25 @@
 	
 }
 
+#parallax2{
+	
+	background-image: url("../imgs/background2.jpg");
+	width: 100%;
+	min-height: 900px;
+	
+	/* Parallax effect */
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	
+}
+
 section{
 	
 	display: flex;
 	justify-content: space-around;
-	height: 400px;
+	height: 300px;
 	background-color: white;
 	
 	font-size: 30px;

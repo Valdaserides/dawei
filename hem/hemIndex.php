@@ -25,7 +25,10 @@ include("../templates/navigation.php");
 		
 		<div class="section-item"> 
 		
-			<h2> Alltid färska varor </h2> 
+			<h2> Öppetider </h2> 
+			<p> Måndag-Fredag 10:00 - 19:00 </p> 
+			<p> Lördag 12:00 - 20:00 </p> 
+			<p> Söndag 12:00 - 18:00 </p>			
 		
 		</div>
 		
@@ -37,7 +40,7 @@ include("../templates/navigation.php");
 	
 	</section>
 	
-	<div id="background-image2"> </div>
+	<div id="parallax2"> </div>
 
 </body>
 </html>

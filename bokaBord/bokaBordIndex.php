@@ -3,7 +3,7 @@
 include("../templates/navigation.php");
 require("../dbConnect.php");
 
-if(isset($_POST['name']) && isset($_POST['datum']) && isset($_POST['time']) && isset($_POST['persons'])){
+if(isset($_POST['name']) && isset($_POST['date']) && isset($_POST['time']) && isset($_POST['persons'])){
 	
 	$namn = $_POST['name'];
 	$tid = $_POST['time'];
@@ -28,7 +28,7 @@ if(isset($_POST['name']) && isset($_POST['datum']) && isset($_POST['time']) && i
 		echo "FInns inget bord ledigt.";
 	}
 	
-	$query = "INSERT TO bokning (bokning_namn,bokning_datum,bokning_tid,bokning_bord,bokning_antal) VALUES ('$namn','$datum','$tid',$table_id,$antal,'$extra');";
+	$query = "INSERT INTO bokning (bokning_namn,bokning_datum,bokning_tid,bokning_bord,bokning_antal,bokning_extra) VALUES ('$namn','$datum','$tid',$table_id,$antal,'$extra');";
 	
 	mysqli_query($dbc,$query);
 	
@@ -37,18 +37,32 @@ if(isset($_POST['name']) && isset($_POST['datum']) && isset($_POST['time']) && i
 ?>
 <link rel="stylesheet" href="../css/bokaBordCss.css">
 
-<form action="" method="POST">
+<main>
 
-	Namn*: <input type="text" name="name"> <br>
-	Datum*: <input type="date" name="date"> <br>
-	Tid*: <input type="text" name="time"> <br>
-	Antal personer*: <input type="text" name="persons"> <br>
-	Extra: <input type="text" name="extra"> <br>
-	<input type="submit"> <input type="reset">
+	<form action="" method="POST">
+	
+		<h1> Boka bord här! </h1>
+		<h4> <i> * = Måste fyllas i </i> </h4>
+		<p> Namn*: </p> <input type="text" name="name"> <br>
+		<p> Datum*: </p> <input type="date" name="date"> <br>
+		<p> Tid*: </p> <input type="time" name="time"> <br>
+		<p> Antal personer*: </p> <input type="text" name="persons"> <br>
+		<p> Extra: </p> <input type="text" name="extra"> <br>
+		<input type="reset" value="Rensa"> <input type="submit" value="Boka">
 
 
-</form>
-
+	</form>
+	
+</main>
 
 </body>
 </html>
+<?php
+
+include("../templates/footer.php");
+
+?>
+
+
+
+

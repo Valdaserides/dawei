@@ -21,3 +21,4 @@ CREATE TABLE bokning(
 
 INSERT INTO bord (bord_platser) VALUES
 (8),(5),(6),(3),(5);
+

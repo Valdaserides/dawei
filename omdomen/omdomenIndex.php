@@ -10,7 +10,7 @@ require("../dbConnect.php"); // databasen
 		
 	<section class="text">
 	
-		<h1> Vi på Dawei sätter alltid kunden i fokus. Vi uppskattar om du skriven ett omdömen om oss och våran support. </h1>
+		<h1> Vi på Dawei sätter alltid kunden i fokus. Vi uppskattar om du skriver ett omdöme om oss och våran support. </h1>
 		<h3> Skriv ett omdöme nedan eller kolla på alla som redan finns. </h3>
 
 	</section>
@@ -36,12 +36,12 @@ require("../dbConnect.php"); // databasen
 		
 		<section class="alla-omdomen">
 		
-				<h2> Här är våra tidigare kunder som skrivir omdömen om oss! </h2>
-			
+			<h2> Här är våra tidigare kunder som skrivit omdömen om oss! </h2>
+			<div class="omdomen-from-database">
 				<?php 
 				$query = "SELECT * FROM omdomen;";
 				$result = mysqli_query($dbc,$query);
-				
+			
 				$i = 0;
 				while($row = mysqli_fetch_array($result)){
 				$i++;
@@ -50,9 +50,11 @@ require("../dbConnect.php"); // databasen
 				<div class="omdome-text"> <?php echo $row['omdome']; ?> </div>
 				<div class="omdome-betyg"> Betyg: <?php echo $row['betyg']; ?> </div>
 				
-				<?php
-				}
-				?>
+			<?php
+			}
+			?>
+		
+			</div>
 		
 		</section>
 		

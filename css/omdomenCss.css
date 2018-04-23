@@ -63,6 +63,19 @@ main{
 	
 }
 
+.omdomen-from-database{
+	text-align: center;
+	width: 410px;
+	border: 1px dotted;
+	
+}
+
+.omdome-betyg{
+	
+	margin-bottom: 20px;
+	
+}
+
 .omdomen-form{
 	width: 50%;
 	border-left: 1px solid;
