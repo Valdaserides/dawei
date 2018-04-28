@@ -37,7 +37,6 @@ section{
 	justify-content: space-around;
 	height: 300px;
 	background-color: white;
-	
 	font-size: 30px;
 	
 }
@@ -46,7 +45,7 @@ section{
 	
 	display: flex;
 	flex-direction: column;	
-	max-width: 30%;
+	max-width: 33%;
 	margin-top: 20px;
 	
 }
@@ -84,3 +83,131 @@ section{
 	color: white;
 	
 }
+
+@media only screen and (max-width: 1090px) {
+	
+	#floatingDiv{
+		margin-top: -400px;
+		font-size: 3em;
+	}
+	
+	section{
+		height: 200px;
+	}
+	
+	.section-item h2{
+		font-size: .7em;
+	}
+	
+	.section-item p{
+		font-size: .5em;
+	}
+	
+	#parallax{
+		
+		min-height: 500px;
+		
+	}
+	
+	#parallax2{
+	
+		min-height: 400px;
+
+	}
+	
+}
+
+@media only screen and (max-width: 700px) {
+	
+	#floatingDiv{
+		
+		font-size: 2.5em;
+		
+	}
+	
+	section{
+		
+		flex-direction: column;
+		height: auto;
+		
+	}
+	
+	.section-item{
+		
+		margin: 0;
+		border-bottom: 1px solid;
+		min-width: 80%;
+		margin: auto;
+		text-align: center;
+		padding: 20px;
+		
+	}
+	
+	.section-item h2{
+		font-size: 1em;
+	}
+	
+	.section-item p{
+		font-size: 1em;
+	}
+	
+}
+
+@media only screen and (max-width: 580px) {
+	
+	#floatingDiv{
+		
+		font-size: 2em;
+		
+	}
+	
+	.section-item{
+		border-bottom: 1px solid;
+		min-width: 80%;
+		padding: 20px;
+		margin: 200px;
+		text-align: center;
+		margin: auto;
+	}
+	
+	.section-item h2{
+		font-size: .7em;
+	}
+	
+	.section-item p{
+		font-size: .5em;
+	}
+	
+	.no-border{
+		border: none;
+	}
+	
+	#parallax{
+		background-image: none;
+		background-color: rgba(0,0,0,.7);
+		min-height: 250px;
+	}
+	
+	#parallax2{
+		display: none;
+	}
+	
+	#floatingDiv{
+		
+		margin-top: -200px;
+		font-size: 1em;
+		
+	}
+	
+}
+
+
+
+
+
+
+
+
+
+
+

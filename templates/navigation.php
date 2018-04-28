@@ -30,7 +30,7 @@
 	
 	<label for="toggle"> &#9776; </label>
 	<input type="checkbox" id="toggle" />
-		
+	
 	<ul class="respo-li">
 		<li><a class="active" href="/dawei/hem/hemIndex.php">HEM</a></li>
 		<li><a href="/dawei/meny/menuIndex.php">MENY</a></li>
@@ -38,7 +38,6 @@
 		<li><a href="/dawei/omdomen/omdomenIndex.php">OMDÖMEN</a></li>
 		<li><a href="/dawei/bokaBord/bokaBordIndex.php" id="bokaBord">BOKA BORD</a></li>
 	</ul>
-
 </nav>
 	
 

@@ -19,9 +19,11 @@ body{
 main{
 	
 	width: 1100px;
-	height: 1000px;
+	padding-bottom: 50px;
 	margin: auto;
 	background-color: rgba(200,200,200,.7);
+	display: flex;
+	flex-direction: column;
 	
 }
 
@@ -59,7 +61,7 @@ main{
 
 .alla-omdomen{
 	
-	width: 40%;
+	width: 500px;
 	
 }
 
@@ -77,7 +79,7 @@ main{
 }
 
 .omdomen-form{
-	width: 50%;
+	width: 500px;
 	border-left: 1px solid;
 	padding-left: 50px;
 
@@ -93,6 +95,37 @@ main{
 		font-size: 2em;
 		width: 75%;
 		margin: auto;
+	}
+	
+	#omdomen{
+		flex-direction: column;
+		
+	}
+	
+	.omdomen-form{
+		border: none;
+		margin: auto;
+	}
+	
+	.alla-omdomen{
+		padding: 0;
+		margin: auto;
+		margin-top: 50px;
+	}
+	
+	.alla-omdomen h2{
+		font-size: 16px;
+		margin-bottom: 10px;
+		
+	}
+	
+	.omdomen-from-database{
+		
+		margin: 0;
+		text-align: center;
+		width: 410px;
+		border: none;		
+	
 	}
 	
 }

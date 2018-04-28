@@ -32,9 +32,11 @@ include("../templates/navigation.php");
 		
 		</div>
 		
-		<div class="section-item"> 
+		<div class="section-item no-border"> 
 		
-			<h2> Alltid färska varor </h2> 
+			<h2> Bra kundservice </h2> 
+			<p> Vi prioriterar alltid kunden över allt annat. Hos oss kan du förvänta dig 100% service. Kolla in vad våra tidigare kunder har skrivit på sidan "omdömen".</p>
+			
 		
 		</div>
 	
