@@ -16,12 +16,12 @@
 
 <nav>
 
-	<ul>
-	  <li><a class="active" href="/dawei/hem/hemIndex.php">HEM</a></li>
-	  <li><a href="/dawei/meny/menuIndex.php">MENY</a></li>
-	  <li><a href="/dawei/about/aboutIndex.php">OM OSS</a></li>
-	  <li><a href="/dawei/omdomen/omdomenIndex.php">OMDÖMEN</a></li>
-	  <li><a href="/dawei/bokaBord/bokaBordIndex.php" id="bokaBord">BOKA BORD</a></li>
+	<ul class="main-nav">
+	  <li class="li-item"><a class="active" href="/dawei/hem/hemIndex.php">HEM</a></li>
+	  <li class="li-item"><a href="/dawei/meny/menuIndex.php">MENY</a></li>
+	  <li class="li-item"><a href="/dawei/about/aboutIndex.php">OM OSS</a></li>
+	  <li class="li-item"><a href="/dawei/omdomen/omdomenIndex.php">OMDÖMEN</a></li>
+	  <li class="li-item"><a href="/dawei/bokaBord/bokaBordIndex.php" id="bokaBord">BOKA BORD</a></li>
 	</ul>
 
 </nav>
@@ -32,11 +32,11 @@
 	<input type="checkbox" id="toggle" />
 		
 	<ul class="respo-li">
-		<li><a class="active" href="/dawei/hem/hemIndex.php">HEM</a></li>
-		<li><a href="/dawei/meny/menuIndex.php">MENY</a></li>
-		<li><a href="/dawei/about/aboutIndex.php">OM OSS</a></li>
-		<li><a href="/dawei/omdomen/omdomenIndex.php">OMDÖMEN</a></li>
-		<li><a href="/dawei/bokaBord/bokaBordIndex.php" id="bokaBord">BOKA BORD</a></li>
+		<li class="repo-li-item"><a class="active" href="/dawei/hem/hemIndex.php">HEM</a></li>
+		<li class="repo-li-item"><a href="/dawei/meny/menuIndex.php">MENY</a></li>
+		<li class="repo-li-item"><a href="/dawei/about/aboutIndex.php">OM OSS</a></li>
+		<li class="repo-li-item"><a href="/dawei/omdomen/omdomenIndex.php">OMDÖMEN</a></li>
+		<li class="repo-li-item"><a href="/dawei/bokaBord/bokaBordIndex.php" id="bokaBord">BOKA BORD</a></li>
 	</ul>
 
 </nav>

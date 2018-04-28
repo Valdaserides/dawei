@@ -21,7 +21,7 @@ require("../dbConnect.php"); // databasen
 		
 			Skriv ditt omdöme: <input type="text" name="omdome"> <br>
 			Betyg: <br> 1 <input type="radio" value="1" name="betyg"> <br> 2 <input type="radio" value="2" name="betyg"> <br> 3 <input type="radio" value="3" name="betyg"> <br> 4 <input type="radio" value="4" name="betyg"> <br> 5 <input type="radio" value="5" name="betyg"> <br>
-		
+			
 			<input type="submit" value="Skicka"> <br>
 			<input type="reset" value="Reset">
 		

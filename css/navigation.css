@@ -3,37 +3,36 @@
 	padding: 0;
 }
 
-nav ul{ 
+.main-nav ul{ 
 
-	
 	background-color: #FFF;
 	border-bottom: solid 1px;
 	display: flex;
 	justify-content: center;
-	list-style-type: none; 
+	list-item-style-type: none; 
 	width: 100%;
 
 }
 
-li { 
+.li-item { 
 	
 	margin: 40px 40px 40px 40px;
 	border-bottom: solid 3px; 
 
 }
 
-li a {
+.li-item a {
 
 	position: relative;
     color: black;
-    text-align: center;
+    text-a.li-itemgn: center;
 	font-size: 2em;
     text-decoration: none;
 	padding: 10px 10px;
 	
 }
 
-li a:before {
+.li-item a:before {
 	
 	content: "";
 	position: absolute;
@@ -50,7 +49,7 @@ li a:before {
 	
 }
 
-li a:hover:before{ 
+.li-item a:hover:before{ 
 
 	visibility: visible; 
 	-webkit-transform: scaleX(1); 
@@ -67,7 +66,7 @@ li a:hover:before{
 label{
 	margin: 0 40px 0 0;
 	font-size: 26px;
-	line-height: 70px;
+	.li-itemne-height: 70px;
 	display: none;
 }
 
@@ -84,7 +83,7 @@ label{
 		background-image: none;
 	}
 	
-	nav{
+	.main-nav{
 		display: none;
 	}
 	
@@ -100,25 +99,25 @@ label{
 		margin-left: 20px;
 	}
 	
-	.respo-li{
+	.respo-li-item{
 		display: none;
-		text-align: center;
+		text-a.li-itemgn: center;
 		width: 100%;
 	}
 	
-	.respo-li a{
+	.respo-li-item a{
 		display: block;
 		border-bottom: none;
 		margin: 0;
 		
 	}
 	
-	#toggle:checked + .respo-li{
+	#toggle:checked + .respo-.li-item{
 		display: block;
 		
 	}
 	
-	li a:before {
+	.li-item a:before {
 	
 		content: "";
 		position: absolute;
@@ -127,7 +126,7 @@ label{
 		bottom: 0;
 		left: 0;
 		background-color: #000;
-		visibility: hidden;
+		visibi.li-itemty: hidden;
 		-webkit-transform: none;
 		transform: none;
 		-webkit-transition: none;
@@ -135,7 +134,7 @@ label{
 	
 	}
 	
-	li a:hover:before{ 
+	.li-item a:hover:before{ 
 
 		visibility: hidden; 
 	
