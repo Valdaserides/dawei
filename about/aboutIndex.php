@@ -5,12 +5,7 @@ include("../templates/navigation.php");
 ?>
 <link rel="stylesheet" href="../css/aboutCss.css">
 
-<main>
-
-
-
-
-</main>
+om oss
 
 
 </body>

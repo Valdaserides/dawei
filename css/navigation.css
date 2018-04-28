@@ -3,36 +3,37 @@
 	padding: 0;
 }
 
-.main-nav ul{ 
+nav ul{ 
 
+	
 	background-color: #FFF;
 	border-bottom: solid 1px;
 	display: flex;
 	justify-content: center;
-	list-item-style-type: none; 
+	list-style-type: none; 
 	width: 100%;
 
 }
 
-.li-item { 
+li { 
 	
 	margin: 40px 40px 40px 40px;
 	border-bottom: solid 3px; 
 
 }
 
-.li-item a {
+li a {
 
 	position: relative;
     color: black;
-    text-a.li-itemgn: center;
+    text-align: center;
 	font-size: 2em;
     text-decoration: none;
 	padding: 10px 10px;
 	
 }
 
-.li-item a:before {
+li a:before {
 	
 	content: "";
 	position: absolute;
@@ -49,7 +50,7 @@
 	
 }
 
-.li-item a:hover:before{ 
+li a:hover:before{ 
 
 	visibility: visible; 
 	-webkit-transform: scaleX(1); 
@@ -66,7 +67,7 @@
 label{
 	margin: 0 40px 0 0;
 	font-size: 26px;
-	.li-itemne-height: 70px;
+	line-height: 70px;
 	display: none;
 }
 
@@ -83,7 +84,7 @@ label{
 		background-image: none;
 	}
 	
-	.main-nav{
+	nav{
 		display: none;
 	}
 	
@@ -99,25 +100,25 @@ label{
 		margin-left: 20px;
 	}
 	
-	.respo-li-item{
+	.respo-li{
 		display: none;
-		text-a.li-itemgn: center;
+		text-align: center;
 		width: 100%;
 	}
 	
-	.respo-li-item a{
+	.respo-li a{
 		display: block;
 		border-bottom: none;
 		margin: 0;
 		
 	}
 	
-	#toggle:checked + .respo-.li-item{
+	#toggle:checked + .respo-li{
 		display: block;
 		
 	}
 	
-	.li-item a:before {
+	li a:before {
 	
 		content: "";
 		position: absolute;
@@ -126,7 +127,7 @@ label{
 		bottom: 0;
 		left: 0;
 		background-color: #000;
-		visibi.li-itemty: hidden;
+		visibility: hidden;
 		-webkit-transform: none;
 		transform: none;
 		-webkit-transition: none;
@@ -134,7 +135,7 @@ label{
 	
 	}
 	
-	.li-item a:hover:before{ 
+	li a:hover:before{ 
 
 		visibility: hidden; 
 	
