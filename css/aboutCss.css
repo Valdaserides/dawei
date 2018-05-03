@@ -1,6 +1,93 @@
+@import url('https://fonts.googleapis.com/css?family=Arvo');
+
 *{
 	
 	margin: 0;
 	padding: 0;
 	
 }
+
+.no-border{
+	border: none;
+}
+
+body{
+	
+	background-image: url("../imgs/blurred-background.jpg");
+	
+	/* Parallax effect */
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	
+}
+
+main{
+	
+	font-family: 'Arvo', serif;
+	margin: auto;
+	width: 1100px;
+	background-color: rgba(200,200,200,.7);
+	height: 600px;
+	
+}
+
+.main-content{
+	
+	margin-top: 50px;
+	display: flex;
+	justify-content: center;
+	text-align: center;
+	
+}
+
+.main-content h3{
+	
+	font-size: 1.5em;
+	
+}
+
+main h1{
+	
+	text-align: center;
+	font-size: 3em;
+	
+}
+
+section{
+	
+	width: 500px;
+	height: 200px;
+	border-left: 1px solid;
+	
+}
+
+@media only screen and (max-width: 1090px) {
+	
+	main{
+		width: 100%;
+	}
+	
+}
+
+@media only screen and (max-width: 700px) {
+	
+	section{
+		border-left: none;
+		border-bottom: 1px solid;
+		padding: 20px 20px 20px 20px;
+		margin: auto;
+		width: 250px;
+	}
+	
+	.main-content{
+		flex-direction: column-reverse;
+	}
+	main{
+		
+	}
+	
+}
+
+
