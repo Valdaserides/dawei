@@ -8,17 +8,101 @@
 #main{
 	
 	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
 	width: 100%;
 	height: 300px;
 	background-color: grey;
 	
 }
 
+li{
+	
+	list-style-type: none;
+	text-decoration: none;
+	border-bottom: none;
+	
+}
+
+#quick-nav{
+	
+	height: 80%;
+	border-right: 1px solid;
+	padding-right: 90px;
+	
+}
+
 .footer-li{
 	
 	margin: 0;
-	list-style-type: none;
-	text-decoration: none;
-	border-right: solid 1px;
+	padding-bottom: 16px;
+	text-align: center;
 	
 }
+
+.footer-li a{
+	
+	list-style-type: none;
+	text-decoration: none;
+	font-size: 1.5em;
+	color: #000;
+	
+}
+
+#social-media{
+
+	border-bottom: none;
+	height: 80%;
+	padding-left: 90px;
+	
+}
+
+.social-media-li{
+	
+	text-align: center;
+	margin: 0;
+	padding-bottom: 15px;
+	
+}
+
+.social-media-li a{
+	
+	font-size: 1.5em;
+	list-style-type: none;
+	text-decoration: none;
+	color: #000;
+	
+	
+}
+
+@media only screen and (max-width: 580px) {
+	
+	.footer-li a{
+		font-size: 1.1em;
+	}
+	
+	#quick-nav{
+		height: 60%;
+		padding-right: 10%;
+	}
+	.social-media-li a{
+		font-size: 1.1em;
+	}
+	#social-media{
+		height: 60%;
+		padding-left: 10%
+	}
+	
+}
+
+
+
+
+
+
+
+
+
+
+
