@@ -70,24 +70,22 @@ mysqli_query($dbc,"SET NAMES UTF8");
 
 if(isset($_POST['omdome']) && isset($_POST['betyg'])){
 
-	$query = "INSERT INTO omdomen (omdome,betyg) VALUES ('$omdome','$betyg');";
+	if($betyg == null || $omdome == null){
 
-	mysqli_query($dbc,$query);
+		echo '<h1 style="font-size:4em;color:white;text-align:center;">Du måste skriva in allt.</h1>';
+			
+	}
+	
+	else{
+		
+		$query = "INSERT INTO omdomen (omdome,betyg) VALUES ('$omdome','$betyg');";
 
+		mysqli_query($dbc,$query);
+		
+	}
+	
 }
 ?>
 
 </body>
 </html>
-
-<?php
-
-
-?>
-
-
-
-
-
-
-
