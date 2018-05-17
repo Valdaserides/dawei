@@ -58,7 +58,7 @@ nav ul{
 	
 }
 
-/* Responsive Design */
+/* Burger Nav */
 
 #respo-menu{
 	display: none;
@@ -76,6 +76,8 @@ label{
 	display: none;
 	
 }
+
+/* Responsive Design */
 
 @media only screen and (max-width: 1090px) {
 
