@@ -19,7 +19,7 @@ if(isset($_POST['name']) && isset($_POST['date']) && isset($_POST['time']) && is
 	
 	if($namn == null || $tid == null || $datum == null || $antal == null){
 		echo '<h1 style="font-size:4em;color:white;text-align:center;">Du måste skriva in allt markerat med *</h1>';
-	} 	
+	}
 	
 	else{
 	
