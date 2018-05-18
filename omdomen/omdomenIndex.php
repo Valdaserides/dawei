@@ -5,7 +5,7 @@ require("../dbConnect.php"); // databasen
 
 ?>
 <link rel="stylesheet" href="../css/omdomenCss.css">
-<link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Oswald" rel="font">
 <main>
 		
 	<section class="text">
