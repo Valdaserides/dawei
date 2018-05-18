@@ -29,13 +29,12 @@ if(isset($_POST['name']) && isset($_POST['date']) && isset($_POST['time']) && is
 		
 		if($table = mysqli_fetch_array($result)){
 			$table_id = $table['bord_id'];
+			$query = "INSERT INTO bokning (bokning_namn,bokning_datum,bokning_tid,bokning_bord,bokning_antal,bokning_extra) VALUES ('$namn','$datum','$tid',$table_id,$antal,'$extra');";
+			echo '<h3 style="padding:20px;background-color:rgba(0,0,0,.7);font-size:3em;color:green;text-align:center;font-weight:900;">Klart! ' . $namn . ' har bokat bord den ' . $datum . ' klockan ' . $tid . '.</h3>';
 		}
 		else{
-			echo "Finns inget bord ledigt.";
+			echo '<h1 style="font-size:3em;color:red;text-align:center;font-weight:900;">Finns inget bord ledigt.</h1>';
 		}
-		
-		$query = "INSERT INTO bokning (bokning_namn,bokning_datum,bokning_tid,bokning_bord,bokning_antal,bokning_extra) VALUES ('$namn','$datum','$tid',$table_id,$antal,'$extra');";
-		
 		mysqli_query($dbc,$query);
 	}
 }
