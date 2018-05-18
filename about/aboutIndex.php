@@ -4,7 +4,9 @@ include("../templates/navigation.php");
 
 ?>
 <link rel="stylesheet" href="../css/aboutCss.css">
-
+<head>
+	<title>Om oss</title>
+</head>
 <main>
 
 	<h1> Dawei thairestaurang </h1>

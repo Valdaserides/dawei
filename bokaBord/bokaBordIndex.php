@@ -42,7 +42,9 @@ if(isset($_POST['name']) && isset($_POST['date']) && isset($_POST['time']) && is
 
 ?>
 <link rel="stylesheet" href="../css/bokaBordCss.css">
-
+<head>
+	<title> Boka bord </title>
+</head>
 <main>
 
 	<form action="" method="POST">

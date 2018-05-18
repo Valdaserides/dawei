@@ -6,6 +6,9 @@
 include("../templates/navigation.php"); // includerar navigationbar
 require("../dbConnect.php");
 ?>
+<head>
+	<title>Meny</title>
+</head>
 <div id="menu-category"> 
 
 	<h1> Här är våran meny! </h1> 

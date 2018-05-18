@@ -4,11 +4,9 @@ include("../templates/navigation.php");
 
 ?>
 <link rel="stylesheet" href="../css/mainCss.css" />
-<style>
-
-	
-
-</style>
+<head>
+	<title>Hem</title>
+</head>
 
 	<div id="parallax">	</div>
 	

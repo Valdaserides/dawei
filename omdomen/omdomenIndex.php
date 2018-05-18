@@ -6,6 +6,9 @@ require("../dbConnect.php"); // databasen
 ?>
 <link rel="stylesheet" href="../css/omdomenCss.css">
 <link href="https://fonts.googleapis.com/css?family=Oswald" rel="font">
+<head>
+	<title>Omdömen</title>
+</head>
 <main>
 		
 	<section class="text">
